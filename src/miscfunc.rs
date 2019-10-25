@@ -12,7 +12,6 @@ use amethyst::{
 };
 use rand::{thread_rng, Rng};
 
-use crate::systems;
 
 use amethyst_tiles::{RenderTiles2D, Tile, TileMap};
 

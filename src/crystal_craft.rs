@@ -13,8 +13,6 @@ use amethyst::{
 use amethyst_tiles::TileMap;
 
 use crate::miscfunc;
-use crate::systems;
-
 pub struct CrystalCraft;
 
 impl SimpleState for CrystalCraft {

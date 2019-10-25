@@ -8,7 +8,6 @@ use amethyst::{
 };
 
 use crate::miscfunc;
-use crate::systems;
 use crate::crystal_craft::CrystalCraft;
 
 pub struct SplashScreen;

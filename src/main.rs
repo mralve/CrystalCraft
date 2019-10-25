@@ -21,7 +21,6 @@ use amethyst::{
 use amethyst_tiles::RenderTiles2D;
 
 mod splashscreen;
-mod systems;
 mod crystal_craft;
 
 pub mod miscfunc;
@@ -60,9 +59,7 @@ fn main() -> amethyst::Result<()> {
                 .with_plugin(RenderFlat3D::default())
                 .with_plugin(RenderUi::default())
                 //.with_plugin(RenderTiles2D::<BaseTile>::default()),
-        )?
-        .with_bundle(systems::GameSystemBundle)?;
-
+        )?;
     let assets_dir = app_root.join("assets");
     let mut game = Application::new(assets_dir, CrystalCraft, game_data)?;
     game.run();
