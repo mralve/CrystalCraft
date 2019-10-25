@@ -1,7 +1,7 @@
 [package]
 name = "crystalcraft"
 version = "0.0.1"
-authors = ["MrAlve <mralve@amethyst-engine.org>"]
+authors = ["MrAlve <mralve@amethyst-engine.org>", "Moxinilian <moxinilian@amethyst-engine.org>"]
 edition = "2018"
 
 [profile.release]
