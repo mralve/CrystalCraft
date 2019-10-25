@@ -1,0 +1,21 @@
+[package]
+name = "crystalcraft"
+version = "0.0.1"
+authors = ["MrAlve <mralve@amethyst-engine.org>"]
+edition = "2018"
+
+[profile.release]
+opt-level = 3
+lto = true
+panic = 'abort'
+
+[dependencies]
+stretch = "0.3.2"
+image = "0.22.3"
+derive-new = "0.5.8"
+rand = "0.7.2"
+amethyst_tiles = "0.1.3"
+
+[dependencies.amethyst]
+version = "0.13.2"
+features = ["vulkan", "no-slow-safety-checks"]

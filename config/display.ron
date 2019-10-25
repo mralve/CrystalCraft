@@ -1,0 +1,4 @@
+(
+    title: "CrystalCraft",
+    dimensions: Some((1200, 700)),
+)
