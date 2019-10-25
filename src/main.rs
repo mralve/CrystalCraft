@@ -9,7 +9,7 @@ use amethyst::{
     input::{InputBundle, StringBindings},
     prelude::*,
     renderer::{
-        plugins::{RenderFlat2D, RenderFlat3D, RenderToWindow},
+        plugins::{RenderFlat2D, RenderSkybox, RenderFlat3D, RenderToWindow},
         sprite::{prefab::SpriteScenePrefab, SpriteRender},
         types::DefaultBackend,
         RenderingBundle,
@@ -58,6 +58,7 @@ fn main() -> amethyst::Result<()> {
                 //.with_plugin(RenderFlat2D::default())
                 .with_plugin(RenderFlat3D::default())
                 .with_plugin(RenderUi::default())
+                .with_plugin(RenderSkybox::default())
                 //.with_plugin(RenderTiles2D::<BaseTile>::default()),
         )?;
     let assets_dir = app_root.join("assets");
